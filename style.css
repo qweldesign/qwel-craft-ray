@@ -189,6 +189,9 @@ button, input, select, textarea {
  * Header
  */
 .header {
+  background-color: #ffffff;
+}
+.header__inner {
   width: min(100%, 768px);
   margin: 0 auto;
   padding: 0 clamp(0.75rem, 2%, 1.5rem);
@@ -196,6 +199,8 @@ button, input, select, textarea {
 
 #logo {
   width: 7.2rem;
+  margin: 0;
+  padding: var(--spacing--medium) 0 var(--spacing--small);
 }
 
 /**
@@ -233,10 +238,11 @@ button, input, select, textarea {
  * Main
  */
 .main {
-  width: min(100%, 768px);
+  width: min(100%, 900px);
   min-height: calc(100vh - 18rem);
   margin: 0 auto;
-  padding: 0 clamp(0.75rem, 2%, 1.5rem);
+  padding: 0 clamp(0.75rem, 2%, 18px);
+  color: #ffffff;
 }
 .main__title::after {
   content: "✶";
@@ -259,7 +265,7 @@ button, input, select, textarea {
   font-size: 1.5em;
 }
 .main__listItem--spec {
-  color: var(--color--dark);
+  color: #ffffff;
   font-size: 0.875rem;
   letter-spacing: var(--heading-letter-spacing);
 }
